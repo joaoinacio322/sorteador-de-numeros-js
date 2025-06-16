@@ -10,8 +10,11 @@ function sortear(){
         numero = gerarNumeroAleatorio(de, ate);
         sorteados.push(numero);
     }
+    
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados:  ${sorteados}</label>`;
 
-    console.log(sorteados);
+    
 }
 
 function gerarNumeroAleatorio(min, max) {
